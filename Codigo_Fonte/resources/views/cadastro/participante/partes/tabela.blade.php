@@ -1,6 +1,6 @@
 <table class="table table-striped">
 
-  <thead>
+  <thead class="mdb-color blue">
     <tr>
       <th>E-mail</th>
       <th>CPF</th>

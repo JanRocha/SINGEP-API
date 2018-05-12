@@ -16,3 +16,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+///// Tela Participantes ////////
+Route::group(['prefix'=>'cadastro'],function(){
+Route::get('/listar',['uses'=>'Cadastro\ParticipanteController@listar']);
+  });
