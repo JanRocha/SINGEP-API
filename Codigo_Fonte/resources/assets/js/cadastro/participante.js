@@ -13,9 +13,10 @@ Vue.use(VueResource)
 
 new Vue(
   {
-    el:'#',
+    el:'#part',
     data:{
-
+    response:{data:[]},
+    erro:null,
     },
     filters:{
 
@@ -24,6 +25,16 @@ new Vue(
 
     },
     methods:{
+    listar:function(){
+      this.$http.get('/cadastro/listar/').then(
+        function(response){
+          this.$set(this,"registros",response.data)
+        },
+        function(response){
+          this.$set(this,"erro",response.data)
+        },
+      )
+    },
 
     },
     mounted(){

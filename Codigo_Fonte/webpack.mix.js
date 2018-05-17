@@ -16,7 +16,7 @@ let mix = require('laravel-mix');
 
   mix.styles([
     'node_modules/font-awesome/css/font-awesome.css',
-    'node_modules/mdbootstrap/css/mdbn.css',   //MD Bootstrap
+    'node_modules/mdbootstrap/css/mdbn.css', 
     'node_modules/bootstrap/dist/css/bootstrap.css',
   ], 'public/resources/vendor/css/vendor.css').version();
 

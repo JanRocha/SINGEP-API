@@ -1,25 +1,20 @@
 @extends('layouts.padrao')
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<div id="part">
 <div class="card">
   <div class="card-header">
  @include('cadastro.participante.partes.filtro')
   </div>
   <div class="card-body">
   @include('cadastro.participante.partes.tabela')
+  @include('cadastro.participante.partes.modal')
+
   </div>
   <div class="card-footer">
-@include('cadastro.participante.partes.paginacao')
+
   </div>
+</div>
 </div>
 
     <script type="text/javascript" src="js/cadastro/app.participante.js">
 
     </script>
-  </body>
-</html>
