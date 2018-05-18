@@ -15,11 +15,12 @@ class CreateParticipantesTable extends Migration
     {
         Schema::create('participante', function (Blueprint $table) {
             $table->increments('id');
-            $table->boolean('adm');
-            $table->string('email');
+            $table->string('nome');
+            $table->string('email')->unique();
             $table->string('cpf',12)->unique();
             $table->string('telefone');
             $table->string('filiacao');
+            $table->string('perfil',1);
             $table->rememberToken();
             $table->softDeletes();
             $table->timestamps();

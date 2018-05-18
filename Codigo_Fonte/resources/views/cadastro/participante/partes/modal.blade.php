@@ -11,6 +11,7 @@
       </div>
       <div class="modal-body">
        <label>Nome</label>
+       <input type="text" class="form-control">
       </div>
       <div class="modal-footer">
         ...
