@@ -1,44 +1,27 @@
-/**
- * Script para pagina de cadastro do tipo de evento
- * @author Renato Rebouças da Silva
- * @copyright Fabrica de APP
- * @since 12/05/2018
- * @version 0.0.10
- */
-import Vue from 'vue'
-import VueResource from 'vue-resource'
-import moment from 'moment'
-
-Vue.use(VueResource)
-
-new Vue(
-  {
-    el:'#part',
-    data:{
-    response:{data:[]},
-    erro:null,
-    },
-    filters:{
-
-    },
-    computed:{
-
-    },
-    methods:{
-    listar:function(){
-      this.$http.get('/cadastro/listar/').then(
-        function(response){
-          this.$set(this,"registros",response.data)
-        },
-        function(response){
-          this.$set(this,"erro",response.data)
-        },
-      )
-    },
-
-    },
-    mounted(){
-      this.listar();
-    }
-  }
-)
+// Vue.component('componente-table',{
+//   props:['titulos','registros'],
+//   template:'<table class="table">'+
+//     '<thead>'+
+//       '<tr>'+
+//         '<th v-for="titulo in titulos">{{titulo}}</th>'+
+//       '</tr>'+
+//     '</thead>'+
+//     '<tbody>'+
+//       '<tr v-for="registro in registros">'+
+//         '<td v-for="item in registro">{{item}}</td>'+
+//       '</tr>'+
+//     '</tbody>'+
+//   '</table>'
+// });
+var cadastro =new Vue({
+el:'#cadastro',
+data:{
+meuTitulo:'Esse é o titulo',
+registros:[
+  {titulo:'Titulo',email:'email@mail.com.br',idade:'1'},
+  {titulo:'Titulo2',email:'email2@mail.com.br',idade:'12'},
+  {titulo:'Titulo3',email:'email3@mail.com.br',idade:'13'},
+  {titulo:'Titulo4',email:'email4@mail.com.br',idade:'14'},
+]
+},
+})

@@ -12,20 +12,27 @@ let mix = require('laravel-mix');
  */
 
  mix.js(['resources/assets/js/cadastro/participante.js'],'public/js/cadastro/app.participante.js');
-  mix.styles(['resources/assets/css/main.css'],'public/resources/css/main.css').version();
+ mix.styles(['resources/assets/css/main.css'],'public/resources/css/main.css').version();
 
-  mix.styles([
-    'node_modules/font-awesome/css/font-awesome.css',
-    'node_modules/mdbootstrap/css/mdbn.css', 
-    'node_modules/bootstrap/dist/css/bootstrap.css',
-  ], 'public/resources/vendor/css/vendor.css').version();
+mix.styles([
+   'node_modules/@fortawesome/fontawesome/styles.css',
+   'node_modules/mdbootstrap/css/mdb.min.css',
+   'node_modules/bootstrap/dist/css/bootstrap.css'
+ ],'public/resources/vendor/css/vendor.css').version();
 
-  mix.scripts([
-    'node_modules/jquery/dist/jquery.js',
-    'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
-    'node_modules/vue/dist/vue.js',
-    'node_modules/vue-resource/dist/vue-resource.js',
-  ],'public/resources/vendor/js/vendor.js').version();
+ mix.js(['resources/assets/js/components/tabela.js'],
+ 'public/js/components/app.components.js').version();
 
-   mix.copyDirectory('node_modules/font-awesome/fonts','public/resources/vendor/fonts');
-   mix.copyDirectory('node_modules/mdbootstrap/font','public/resources/vendor/font');
+mix.scripts([
+   'node_modules/jquery/dist/jquery.min.js',
+   'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+   'node_modules/mdbootstrap/js/mdb.min.js',
+   'node_modules/@fortawesome/fontawesome/index.js',
+   'node_modules/@fortawesome/fontawesome-free-solid/index.js',
+   'node_modules/@fortawesome/fontawesome-free-regular/index.js',
+   'node_modules/@fortawesome/fontawesome-free-brands/index.js',
+ ],'public/resources/vendor/js/vendor.js').version();
+
+mix.copyDirectory('node_modules/font-awesome/fonts','public/resources/vendor/fonts');
+mix.copyDirectory('node_modules/mdbootstrap/font','public/resources/vendor/font');
+// mix.copyDirectory('resources/assets/images','public/resources/images');
