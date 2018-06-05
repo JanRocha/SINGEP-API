@@ -11,7 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
- mix.js(['resources/assets/js/cadastro/participante.js'],'public/js/cadastro/app.participante.js');
+ // mix.js(['resources/assets/js/cadastro/participante.js'],'public/js/cadastro/app.participante.js');
  mix.styles(['resources/assets/css/main.css'],'public/resources/css/main.css').version();
 
 mix.styles([
@@ -20,8 +20,7 @@ mix.styles([
    'node_modules/bootstrap/dist/css/bootstrap.css'
  ],'public/resources/vendor/css/vendor.css').version();
 
- mix.js(['resources/assets/js/components/tabela.js'],
- 'public/js/components/app.components.js').version();
+
 
 mix.scripts([
    'node_modules/jquery/dist/jquery.min.js',
@@ -31,6 +30,8 @@ mix.scripts([
    'node_modules/@fortawesome/fontawesome-free-solid/index.js',
    'node_modules/@fortawesome/fontawesome-free-regular/index.js',
    'node_modules/@fortawesome/fontawesome-free-brands/index.js',
+   'node_modules/vue/dist/vue.js',
+   'node_modules/vue-resource/dist/vue-resource.js',
  ],'public/resources/vendor/js/vendor.js').version();
 
 mix.copyDirectory('node_modules/font-awesome/fonts','public/resources/vendor/fonts');

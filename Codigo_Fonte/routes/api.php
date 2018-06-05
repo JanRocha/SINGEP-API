@@ -17,7 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-///// Tela Participantes ////////
-Route::group(['prefix'=>'cadastro'],function(){
-Route::get('/listar',['uses'=>'Cadastro\ParticipanteController@listar']);
-  });
+Route::post('/enviar',['as' => 'user.login' ,'uses' => 'Cadastro\LoginParticipanteController@gravar']);

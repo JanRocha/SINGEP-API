@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="resources/vendor/css/vendor.css">
+    <style>
+      body{
+        /* cinza */
+        background-color: #dfe4ea;
+      }
+    </style>
   </head>
   <body>
 <div class="content">
