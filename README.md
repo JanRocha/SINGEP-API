@@ -4,15 +4,15 @@ Ao baixar executar :
 ```
 npm install
 ```
-##Instalação
+Instalação
 Instalando as bibliotecas usadas uma á uma.
-##NPM
+NPM
 
 ```
 npm install font-awesome mdbootstrap vue-resource
 ```
 
-##fortawesome 5
+fortawesome 5
 
 ```
 npm i --save @fortawesome/fontawesome
