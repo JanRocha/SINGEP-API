@@ -5,10 +5,15 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <style media="screen">
+    #form{
+      width:700px;
+    }
+  </style>
 </head>
-<body>
-  @section('content')  
-    <div id="login">
+<body id="conteudo-vue">
+  @section('content')
+    <div>
       @include('login.partes.card')
     </div>
   @endsection

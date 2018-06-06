@@ -1,11 +1,11 @@
 {!! Form::open(['route' => 'user.login','method' => 'post']) !!}
 <h3>Acesse o sistema</h3>
 <br>
-<div class="container-fluid">
+<div class="container-fluid" id="form">
   <div class="col-6">
     <div class="row">
       <label>
-        {!! Form::text('username', null,['class' => 'form-control', 'placeholder' => 'Usuário']) !!}
+        {!! Form::text('username', null,['class' => 'form-control', 'placeholder' => 'E-mail']) !!}
       </label>
     </div>
   </div>
@@ -13,12 +13,13 @@
   <div class="col-6">
     <div class="row">
       <label>
-        {!! Form::password('password',['class' => 'form-control','placeholder' =>'senha']) !!}
+        {!! Form::password('password',['class' => 'form-control','placeholder' =>'Senha']) !!}
       </label>
+
     </div>
   </div>
-  <div class="row">
-    <button type="button" class="btn btn-success float-right">Login</button>
+  <div class="row" id="btn">
+    {!! Form::submit('Entrar',['class' => 'btn btn-success']) !!}
   </div>
 </div>
 {!! Form::close() !!}

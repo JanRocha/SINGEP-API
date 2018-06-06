@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+// Auth::routes();
+//
+// Route::get('/home', 'HomeController@index')->name('home');
 
 //Tela Login
-Route::get('/login',['uses' => 'Cadastro\LoginParticipanteController@fazerLogin']);
+Route::get('/',['uses' => 'Cadastro\LoginParticipanteController@fazerLogin']);

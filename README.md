@@ -31,6 +31,10 @@ npm i --save @fortawesome/fontawesome-free-brands
 ```
 
 
-bibliotecas instalaadas
+bibliotecas instaladas
 
+laravelcollective/html
 [https://laravelcollective.com/docs/5.0/html](https://laravelcollective.com/docs/5.0/html)
+
+l5 repository
+[https://github.com/andersao/l5-repository](https://github.com/andersao/l5-repository)

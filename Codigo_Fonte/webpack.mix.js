@@ -36,4 +36,6 @@ mix.scripts([
 
 mix.copyDirectory('node_modules/font-awesome/fonts','public/resources/vendor/fonts');
 mix.copyDirectory('node_modules/mdbootstrap/font','public/resources/vendor/font');
+mix.copyDirectory('../Arquivos_de_apoio/fonts/ubuntu','public/resources/vendor/fonts/ubuntu');
+mix.copyDirectory('../Arquivos_de_apoio/fonts/fredoka','public/resources/vendor/fonts/fredoka');
 // mix.copyDirectory('resources/assets/images','public/resources/images');

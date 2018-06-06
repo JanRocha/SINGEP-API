@@ -11,4 +11,7 @@ class LoginParticipanteController extends Controller
       return view('login.index');
       // echo "Tela de login";
     }
+    public function gravar(){
+
+    }
 }

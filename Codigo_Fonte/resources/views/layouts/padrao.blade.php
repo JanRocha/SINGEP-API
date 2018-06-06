@@ -2,8 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Singep</title>
     <link rel="stylesheet" href="resources/vendor/css/vendor.css">
+    <link rel="stylesheet" href={{asset('css/stylesheet.css')}}>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     <style>
       body{
         /* cinza */
