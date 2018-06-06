@@ -20,7 +20,12 @@ class CreateParticipantesTable extends Migration
             $table->string('cpf',12)->unique();
             $table->string('telefone');
             $table->string('filiacao');
-            $table->string('perfil',1);
+            // $table->string('perfil',1);  //no momento não usando
+
+            //permissao
+            $table->string('status')->default('active');
+            $table->string('permissao')->default('app.user');
+
             $table->rememberToken();
             $table->softDeletes();
             $table->timestamps();

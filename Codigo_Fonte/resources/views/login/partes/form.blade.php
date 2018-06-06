@@ -5,7 +5,7 @@
   <div class="col-6">
     <div class="row">
       <label>
-        {!! Form::text('username', null,['class' => 'form-control', 'placeholder' => 'E-mail']) !!}
+        {!! Form::text('username', null,['class' => 'form-control', 'placeholder' => 'CPF', 'maxlength' => '11']) !!}
       </label>
     </div>
   </div>
