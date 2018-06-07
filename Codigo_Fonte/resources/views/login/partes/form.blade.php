@@ -4,8 +4,11 @@
 <div class="container-fluid" id="form">
   <div class="col-6">
     <div class="row">
-      <label>
+      <label id="form1">
         {!! Form::text('username', null,['class' => 'form-control', 'placeholder' => 'CPF', 'maxlength' => '11']) !!}
+        <!-- <form class="form-control" placeholder="CPF" maxlength="11"> -->
+
+        </form>
       </label>
     </div>
   </div>

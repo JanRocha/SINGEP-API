@@ -32,6 +32,9 @@ body{
     margin-left: 25%;
     padding:40px;
   }
+  #form1{
+    border-radius: 2px solid;
+  }
   #form{
     margin-left: 30%;
     /* width: 100px; */
