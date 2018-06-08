@@ -9,5 +9,8 @@ class participante extends Model
 {
   use SoftDeletes;
   protected $table = "participante";
-  protected $fillable = ['adm','email','cpf','telefone','filiacao'];
+  protected $fillable = ['nome','email','cpf','telefone','filiacao','status','permicao'];
+  protected $hidden = [
+      'cpf', 'remember_token',
+  ];
 }

@@ -5,7 +5,8 @@
   <div class="col-6">
     <div class="row">
       <label id="form1">
-        {!! Form::text('username', null,['class' => 'form-control', 'placeholder' => 'CPF', 'maxlength' => '11']) !!}
+        {!! Form::email('email', null,['class' => 'form-control', 'placeholder' => 'ex:fulano@exemplo.com', 'required']) !!}
+        <!--parametro required indica o campo obrigatorio -->
         <!-- <form class="form-control" placeholder="CPF" maxlength="11"> -->
 
         </form>
@@ -16,7 +17,7 @@
   <div class="col-6">
     <div class="row">
       <label>
-        {!! Form::password('password',['class' => 'form-control','placeholder' =>'Senha']) !!}
+        {!! Form::password('cpf',['class' => 'form-control','placeholder' =>'Documento', 'maxlength' => '11']) !!}
       </label>
 
     </div>

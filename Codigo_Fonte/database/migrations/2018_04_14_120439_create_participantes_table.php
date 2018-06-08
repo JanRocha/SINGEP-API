@@ -17,14 +17,14 @@ class CreateParticipantesTable extends Migration
             $table->increments('id');
             $table->string('nome');
             $table->string('email')->unique();
-            $table->string('cpf',12)->unique();
+            $table->string('cpf')->unique();
             $table->string('telefone');
             $table->string('filiacao');
             // $table->string('perfil',1);  //no momento não usando
 
             //permissao
-            $table->string('status')->default('active');
-            $table->string('permissao')->default('app.user');
+            $table->string('status')->default('active')->nulllabel();
+            $table->string('permissao')->default('app.user')->nulllabel();
 
             $table->rememberToken();
             $table->softDeletes();

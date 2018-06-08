@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use App\Repositories\UserRepository;
 use App\Validators\UserValidator;
 
+
+
 class AuthLoginController extends Controller
 {
   protected $repository;
@@ -18,7 +20,25 @@ class AuthLoginController extends Controller
       $this->validator  = $validator;
   }
 
-  public function auth(){
-    echo "entrou";
+//autenticação do sistema
+  public function auth(Request $request){
+// pega as informações da tela
+  $data = [
+       'email' => $request->get('email'),
+       'cpf' => $request->get('cpf')
+  ];
+  //trata pra ver se tem erro
+  try{
+      \Auth::attempt($data, false);
+      return redirect()->route('dashboard.index');
+  }
+  catch(\Exception $e){
+    return $e->getMessage();
+  }
+  //  dd($request->all());
+  //   echo "entrou";
+  }
+  public function index(){
+    return "Entrou index";
   }
 }

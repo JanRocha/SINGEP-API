@@ -21,3 +21,6 @@
 
 //Tela Login
 Route::get('/',['uses' => 'Cadastro\LoginParticipanteController@fazerLogin']);
+
+//dashboard do sistema
+Route::get('/dashboard',['as' => 'dashboard.index', 'uses'  => 'Cadastro\AuthLoginController@index']);
