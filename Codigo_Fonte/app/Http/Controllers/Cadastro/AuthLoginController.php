@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Repositories\UserRepository;
 use App\Validators\UserValidator;
+use App\Model\Usuario\participante;
 
 
 
