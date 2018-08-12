@@ -4,6 +4,10 @@ Ao baixar executar :
 ```
 npm install
 ```
+Erros NPM
+```
+https://github.com/JeffreyWay/laravel-mix/issues/1072
+```
 Instalação
 Instalando as bibliotecas usadas uma á uma.
 NPM
@@ -38,3 +42,6 @@ laravelcollective/html
 
 l5 repository
 [https://github.com/andersao/l5-repository](https://github.com/andersao/l5-repository)
+
+jQuery-Mask
+[https://github.com/igorescobar/jQuery-Mask-Plugin](https://github.com/igorescobar/jQuery-Mask-Plugin)

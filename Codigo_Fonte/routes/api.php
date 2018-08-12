@@ -18,3 +18,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/enviar',['as' => 'user.login' ,'uses' => 'Cadastro\AuthLoginController@auth']);
+
+Route::group(['prefix'=>'usuario'],function(){
+  Route::get('/list',['uses' => 'Cadastro\Participantes\participantesController@list']);
+  Route::post('/save',['uses'=>'Cadastro\Participantes\participantesController@save']);
+
+});

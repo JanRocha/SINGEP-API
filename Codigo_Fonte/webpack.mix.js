@@ -10,8 +10,10 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
+// arquivo de mascaras
+mix.js('resources/assets/js/mascaras.js','public/resources/js').version();
 
- // mix.js(['resources/assets/js/cadastro/participante.js'],'public/js/cadastro/app.participante.js');
+mix.js('resources/assets/js/cadastro/participante.js','public/resources/js').version();
  mix.styles(['resources/assets/css/main.css'],'public/resources/css/main.css').version();
 
 mix.styles([
@@ -32,6 +34,7 @@ mix.scripts([
    'node_modules/@fortawesome/fontawesome-free-brands/index.js',
    'node_modules/vue/dist/vue.js',
    'node_modules/vue-resource/dist/vue-resource.js',
+   'node_modules/jquery-mask-plugin/dist/jquery.mask.min.js',
  ],'public/resources/vendor/js/vendor.js').version();
 
 mix.copyDirectory('node_modules/font-awesome/fonts','public/resources/vendor/fonts');

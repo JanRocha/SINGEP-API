@@ -23,8 +23,9 @@ class CreateParticipantesTable extends Migration
             // $table->string('perfil',1);  //no momento não usando
 
             //permissao
-            $table->string('status')->default('active')->nulllabel();
-            $table->string('permissao')->default('app.user')->nulllabel();
+            $table->string('status')->default('1')->nulllabel();
+            // $table->string('permissao')->default('app.user')->nulllabel();
+            $table->string('permissao')->nulllabel();
 
             $table->rememberToken();
             $table->softDeletes();

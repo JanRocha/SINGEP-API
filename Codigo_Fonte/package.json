@@ -25,6 +25,7 @@
         "@fortawesome/fontawesome-free-regular": "^5.0.13",
         "@fortawesome/fontawesome-free-solid": "^5.0.13",
         "font-awesome": "^4.7.0",
+        "jquery-mask-plugin": "^1.14.15",
         "mdbootstrap": "^4.5.4",
         "vue-resource": "^1.5.0"
     }

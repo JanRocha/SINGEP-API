@@ -24,3 +24,6 @@ Route::get('/',['uses' => 'Cadastro\LoginParticipanteController@fazerLogin']);
 
 //dashboard do sistema
 Route::get('/dashboard',['as' => 'dashboard.index', 'uses'  => 'Cadastro\AuthLoginController@index']);
+
+//tela de participantes
+Route::view('/participantes', 'cadastro.participante.index');

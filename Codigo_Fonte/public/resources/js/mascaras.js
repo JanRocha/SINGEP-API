@@ -63,12 +63,24 @@
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ "./resources/assets/js/mascaras.js":
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  var cpf = $('input[name=cpf]').mask('000.000.000-00', { reverse: true });
+  var tel = $('input[name=tel]').mask('(00) 00000-0000');
+});
+
+/***/ }),
+
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-(function webpackMissingModule() { throw new Error("Cannot find module \"/home/renato/Documentos/SINGEP-API/Codigo_Fonte/resources/assets/js/cadastro/participante.js\""); }());
+module.exports = __webpack_require__("./resources/assets/js/mascaras.js");
 
 
 /***/ })
-/******/ ]);
+
+/******/ });

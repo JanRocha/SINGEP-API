@@ -34,8 +34,4 @@
 
 </nav>
 </div>
-<div class="col">
-  <button type="button" class="btn btn-primary pull-right" name="button" >+Participante</button>
-</div>
-
 </div>
